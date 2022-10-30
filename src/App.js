@@ -3,13 +3,13 @@ import SearchEngine from "./SearchEngine";
 
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <h1>Hello from React</h1>
-      <SearchEngine city="Kyiv" />
+      <div className="container">
+        <h1 className="text-center mt-5"> Weather Search Engine </h1>
+        <SearchEngine city="Kyiv" />
+      </div>
     </div>
   );
 }
-
-export default App;
